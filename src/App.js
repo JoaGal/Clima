@@ -2,19 +2,18 @@ import React from 'react';
 import {
   Routes,
   Route,
-  HashRouter,
+  BrowserRouter,
 } from "react-router-dom";
 import {Home} from './Pages/Home';
-import { Landing } from './Pages/Landing';
 
 export const App = () => {
   return (
     <>
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
     </>
   )
 }

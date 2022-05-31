@@ -21,7 +21,7 @@ export const Landing = () => {
     const handleClickSalta = () => {
         setCiudad('salta')
     }
-    console.log(clima)
+    
     return (
         <>
             <ul className='flex mt-6 justify-center text-cyan-600 text-2xl '>
