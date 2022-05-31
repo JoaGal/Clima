@@ -2,3 +2,6 @@
 grid-column: 1/9;
 margin: auto;
 }
+.a1{
+    grid-column: 2/3; 
+}
