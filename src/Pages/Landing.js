@@ -1,6 +1,5 @@
 import React from 'react';
 import { useFetch } from '../hooks/useFetch';
-import './Landing.css';
 
 export const Landing = () => {
 
@@ -37,8 +36,8 @@ export const Landing = () => {
                     <div className='grid grid-cols-8 m-4'>
                         {clima.list.map((props, index) => {
                             return (
-                                <div className={`${"a" + index}`}>
-                                <div key={props.dt} className='w-52 mt-8 text-center shadow-md shadow-white rounded-md bg-slate-900 text-cyan-600'> 
+                                <div key={props.dt} className={`${"a" + index}`}>
+                                <div className='w-52 mt-8 text-center shadow-md shadow-white rounded-md bg-slate-900 text-cyan-600'> 
                                     <p className='font-semibold font-sans text-2xl text-white'>{(props.dt_txt).slice(8, 10) + "-" + (props.dt_txt).slice(5, 7)}</p>
                                     <img className=' m-auto' src={`http://openweathermap.org/img/wn/${props.weather[0]?.icon}.png`} />
                                     <p className='font-semibold font-sans text-xl'>{(props.dt_txt).slice(11, 16) + "hs"}</p>
